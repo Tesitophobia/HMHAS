@@ -98,6 +98,12 @@ header img{
     }
 }
 
+#vinyl{
+    video:playing{
+    position: absolute;
+}
+}
+
 .tocavinilos{
     display: flex;
 
@@ -219,6 +225,45 @@ from{
 to{
     transform: rotate(360deg);
 }
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h2{
+    letter-spacing: .3em;
+}
+
+#about .LYRICS p span{
+    transition: .2s;
+    cursor: pointer;
+}
+
+#about .LYRICS p span:hover{
+    color: white;
+    transition: .2s;
+
+}
+
+#about aside{
+    display: flex;
+    gap: 4em;
+    margin-top: 2em;
+}
+
+#about .LYRICSTWO p span{
+    transition: .2s;
+    cursor: pointer;
+}
+
+#about .LYRICSTWO p span:hover{
+    color: white;
+    transition: .2s;
+
 }
 
 .animation{
