@@ -116,16 +116,15 @@ header img{
     font-size: 28.2px;
 }
 
-#loop p{
-}
-
 #loop p span:hover{
     color: #007398;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 #loop p span:not(:hover){
     color:  #ffffff;
+    transition: 0.5s;
 }
 
 
@@ -238,3 +237,22 @@ footer video{
         360deg, black 80%, transparent
     );
 }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        height: 50vh;
+    }
+    #vinyl{
+        flex-direction: column;
+        video{
+            height: auto;
+            width: 400px;
+        }
+    }
+    #loop{
+margin-top: 7em;
+    }
+  }
