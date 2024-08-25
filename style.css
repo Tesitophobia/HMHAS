@@ -249,7 +249,7 @@ footer video{
         flex-direction: column;
         video{
             height: auto;
-            width: 400px;
+            width: 360px;
         }
     }
     #loop{
