@@ -275,6 +275,7 @@ animation-iteration-count: infinite;
 animation-timing-function: linear;
 }
 
+
 footer video{
     width: 100%;
     height: auto;
@@ -282,6 +283,79 @@ footer video{
         360deg, black 80%, transparent
     );
 }
+
+#creditos{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.Credits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20em;
+}
+
+.Credits img{
+    mask-image: linear-gradient(
+        180deg, black 80%, transparent
+    );
+}
+
+.Credits aside p span{
+    transition: .4s;
+    cursor:pointer;
+}
+
+.Credits aside p span:hover{
+    color: white;
+    transition: .4s;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    gap: 2em;
+}
+
+.socials img{
+    width: 3em;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #007398; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+
+  #myBtn img{
+    rotate: -45deg;
+    transition: .2s;
+  }
+
+  #myBtn img:hover{
+    transition: .2s;
+    rotate: 0deg;
+  }
+  
+  #myBtn:hover {
+    background-color: #08192d; 
+  }
 
 
 @media only screen and (max-width: 1050px) {

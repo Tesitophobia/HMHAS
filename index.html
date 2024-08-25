@@ -8,12 +8,11 @@
     <title>Billie Eilish - HMHAS</title>
 </head>
 <body>
-
     <nav>
         <ul>
         <a href="#vinyl"><li>VINYL</li></a>
         <a href="#about"><li>CHIHIRO</li></a>
-        <a href=""><li>SOCIALS</li></a>
+        <a href="#creditos"><li>SOCIALS</li></a>
         </ul>
     </nav>
     <header>
@@ -108,8 +107,44 @@
     </aside>
     </section>
 
+    <section id="creditos">
+        <div class="Credits">
+            <img src="assets/Icon.jpg" alt="Billie Eilish foto debajo del agua">
+            <aside>
+                <h2>CREDITS</h2>
+                <p>Interpreted by: <span>Billie Eilish</span></p>
+                <p>Written by: <span>Finneas O'Connell</span> & <span>Billie Eilish O'Connell</span></p>
+                <p>Produced by: <span>FINNEAS</span></p>
+            </aside>
+        </div>
+
+        <div class="socials">
+            <h2>SOCIALS</h2>
+            <a href="https://open.spotify.com/intl-es/artist/6qqNVTkY8uBg9cP3Jd7DAH" target="_blank"><img src="assets/Socials/Spotify.svg" alt=""></a>
+            <a href="https://www.instagram.com/BillieEilish" target="_blank"><img src="assets/Socials/Instagram.svg" alt=""></a>
+            <a href="https://www.x.com/BillieEilish" target="_blank"><img src="assets/Socials/x.svg" alt=""></a>
+        </div>
+    </section>
+
     <footer>
         <video class="vidfot" src="assets/29375fa7887143c4b569e110e435c1d9.mp4" autoplay="true" loop ></video>
     </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/arrow-up.svg" alt=""></button>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
 </body>
 </html>
