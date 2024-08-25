@@ -68,10 +68,21 @@ nav ul{
     letter-spacing: .1em;
 }
 
+input[type="checkbox"]{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
 header{
     height: 30vh;
 }
 
+#optionsm{
+    display: none;
+}
 
 header img{
     margin-top: 6em;
@@ -327,6 +338,10 @@ footer video{
     width: 3em;
 }
 
+.socials img:hover{
+    fill: #ffffff;
+}
+
 #myBtn {
     display: none; 
     position: fixed; 
@@ -357,10 +372,15 @@ footer video{
     background-color: #08192d; 
   }
 
+  .socials div{
+    display: flex;
+    flex-direction: column;
+  }
+
 
 @media only screen and (max-width: 1050px) {
     header{
-        height: 43vh;
+        height: 40vh;
     }
     #vinyl{
         flex-direction: row;
@@ -370,12 +390,37 @@ footer video{
         }
     }
     #loop{
-margin-top: 7em;
+margin-top: 4em;
+    }
+
+    #about aside{
+        gap:2em;
+        text-align: center;
     }
   }
 
+  @media only screen and (max-width: 960px) {
+
+    #about aside{
+        flex-direction: column;
+    }
+    #creditos{
+        flex-direction: column;
+    }
+    .Credits{
+        margin-right: 0;
+    }
+    .socials{
+        margin-top: 2em;
+    }
+    .socials div{
+        flex-direction: row;
+    }
+}
+
   @media only screen and (max-width: 850px) {
     #vinyl{
+        margin-top: 3em;
         flex-direction: column;
         video{
             height: auto;
@@ -383,12 +428,16 @@ margin-top: 7em;
         }
     }
 
+    #loop{
+        margin-top: 10em;
+    }
+
   }
 
 
 @media only screen and (max-width: 600px) {
     header{
-        height: 50vh;
+        height: 30vh;
     }
     #vinyl{
         flex-direction: column;
@@ -400,4 +449,87 @@ margin-top: 7em;
     #loop{
 margin-top: 7em;
     }
+
+    #options{
+        display: none;
+    }
+
+    nav div{
+        display: flex;
+        position: absolute;
+        top:1em;
+        right: 1em
+    }
+
+    label{
+        display: block;
+        img{
+            width: 40px;
+        }
+    }
+
+    #ham:checked ~ #optionsm{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top:2.5em;
+        right: 0;
+        text-align: right;
+        width: 8em;
+        height: 8em;
+        box-shadow: none;
+        background-color: #08192d;
+        border-radius: 25px;
+        background: rgba( 9, 29, 54, 0.45 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 17.5px );
+    }
+
+    #optionsm ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav ul{
+        width: 100%;
+        height: 0em;
+        margin-top: 4em;
+        box-shadow: none;
+    }
+
+
   }
+
+@media only screen and (max-width: 450px) {
+
+    .Credits aside{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Credits img{
+        width: 60%;
+    }
+
+    .Credits p{
+        width: 50%;
+    }
+    .tocavinilos{
+        img{
+            height: 200px;
+        };
+    }
+
+    header{
+        height: 25vh;
+    }
+
+    .animation{
+        margin-left: -6.1em;
+    }
+}
