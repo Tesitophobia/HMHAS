@@ -239,6 +239,32 @@ footer video{
 }
 
 
+@media only screen and (max-width: 1050px) {
+    header{
+        height: 43vh;
+    }
+    #vinyl{
+        flex-direction: row;
+        video{
+            height: auto;
+            width: 360px;
+        }
+    }
+    #loop{
+margin-top: 7em;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    #vinyl{
+        flex-direction: column;
+        video{
+            height: auto;
+            width: 560px;
+        }
+    }
+
+  }
 
 
 @media only screen and (max-width: 600px) {
