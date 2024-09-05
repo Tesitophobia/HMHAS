@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon">
     <title>Billie Eilish - HMHAS</title>
 </head>
-<body>
+<body onscroll="scrolling()">
+
     <nav>
         <ul id="options">
         <a href="#vinyl"><li>VINYL</li></a>
@@ -30,6 +31,9 @@
         <div class="banner">
             <img src="assets/Banner.webp" alt="">
         </div>
+            <svg id="vector" width="211" height="1724" viewBox="0 0 211 1724" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="trazo" d="M2 0.5C158.833 37.5 378.4 120.3 2 155.5C51.6667 199.5 137.4 298.8 83 344C28.6 389.2 26.6667 495.5 32.5 543C58.8333 608.667 103.6 741.7 72 748.5C47.1667 800.167 12.4 911.4 72 943C107 993.5 156 1097.5 72 1109.5C-12 1121.5 10.6667 1258.83 32.5 1326L124.5 1549V1724" stroke="black"/>
+                </svg>
     </header>
     
     <section id="vinyl">
@@ -143,21 +147,17 @@
         <video class="vidfot" src="assets/29375fa7887143c4b569e110e435c1d9.mp4" autoplay="true" loop ></video>
     </footer>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/arrow-up.svg" alt=""></button>
+   <script>
+    var trazo = document.getElementById("trazo")
+    var trazoTotal = trazo.getTotalLength();
+    
+    function scrolling(){
+        var scrollPercentange = (document.body.scrollTop + document.documentElement.scrollTop)/(document.documentElement.scrollHeight - document.documentElement.clientHeight);
+        var final=-(scrollPercentange)*trazoTotal;
+        trazo.style.strokeDasharray= trazoTotal;
+        trazo.style.strokeDashoffset= final;
 
-    <script>
-        let mybutton = document.getElementById("myBtn");
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    } else {
-    mybutton.style.display = "none";
     }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
     </script>
 </body>
 </html>

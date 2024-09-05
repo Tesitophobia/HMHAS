@@ -35,12 +35,17 @@ body{
     background-size: cover;
 }
 
+header,section{
+    position: relative;
+}
+
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
     transition: .5s;
+    z-index: 99;
 
     a{
     text-decoration: none;
@@ -92,6 +97,8 @@ header img{
 .banner{
     display: flex;
     justify-content: center;
+position: absolute;
+z-index: 1;
 }
 
 #vinyl{
@@ -376,6 +383,21 @@ footer video{
     display: flex;
     flex-direction: column;
   }
+
+  #trazo{
+    fill: none;
+    stroke: #006385;
+    stroke-width: 8px;
+    stroke-dasharray: 20px;
+    position: absolute;
+    top:-200px;
+    z-index: 0;
+}
+#vector{
+    width: 100%;
+    position: absolute;
+    top:440px
+}
 
 
 @media only screen and (max-width: 1050px) {
