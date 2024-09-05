@@ -396,7 +396,7 @@ footer video{
 #vector{
     width: 100%;
     position: absolute;
-    top:440px
+    top:100px
 }
 
 
@@ -520,6 +520,12 @@ margin-top: 7em;
         height: 0em;
         margin-top: 4em;
         box-shadow: none;
+    }
+
+    #vector{
+        width: 100%;
+        position: absolute;
+        top:300px
     }
 
 
